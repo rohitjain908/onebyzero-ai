@@ -30,10 +30,10 @@ function IntractiveCard({ img, title, description, id, setCardState }) {
       </div>
       <div className="w-[36%] pt-[47px] pl-[42px] pr-[24px] pb-[20px] flex items-center">
         <div>
-          <div className="tracking-[3.69px] font-light font-['Roobert'] leading-[18px]">
+          <div className="tracking-[3.69px] font-light  leading-[18px]">
             {title}
           </div>
-          <div className="mt-[57px] font-normal leading-[21.6px] font-['Roobert']">
+          <div className="w-[75%] mt-[57px] font-normal leading-[21.6px]">
             {description}
           </div>
           <svg
@@ -158,7 +158,7 @@ function Kuwago() {
   useEffect(() => {
     const interval = setInterval(() => {
       setFeaturedCardId((featuredCardId + 1) % 5);
-    }, 4000);
+    }, 3000);
 
     //Clearing the interval
     return () => clearInterval(interval);
@@ -188,18 +188,18 @@ function Kuwago() {
             <img
               src="/images/kuwago/hero-1.png"
               alt="hero-1"
-              className="w-[15%] absolute right-[25%] mt-[156px]"
+              className="w-[20%] absolute right-[28%] mt-[156px]"
             />
             <img
               src="/images/kuwago/hero-2.png"
               alt="hero-1"
-              className="w-[27%] absolute right-[6%] mt-[156px] top-[100px]"
+              className="w-[33%] absolute right-[6%] mt-[156px] top-[128px]"
             />
           </div>
           {/* Header */}
           <div className=" ml-20 flex">
-            <div className="w-[38%] mt-[349px] mb-[119px]">
-              <div className=" text-[#070D4A] font-light text-[52px] leading-[62px] font-['Roobert']">
+            <div className="w-[40%] mt-[442px] mb-[119px]">
+              <div className=" text-[#070D4A] font-light text-[52px] leading-[62px]">
                 Enterprise search & question-answering that works!
               </div>
               <div className="mt-3">
@@ -228,18 +228,18 @@ function Kuwago() {
           <div>&nbsp;</div>
 
           {/* Text container */}
-          <div className="w-[82%] gap-[98px] mt-[90px] flex mx-auto">
-            <div className="w-[35%]">
+          <div className="w-[82%] mt-[90px] flex mx-auto text-[#1E1E1E] text-[18px]">
+            <div className="w-[36%]">
               Kuwago is a powerful search, query and question-answering
               framework over unstructured, semi-structured and structured
               enterprise datasets
             </div>
-            <div className="w-[21%] flex-1 px-6">
+            <div className="w-[27%] ml-[98px]">
               Generative AI powered natural language query interface, with the
               ability to ability to customize the NLP for any given domain or
               enterprise or department,
             </div>
-            <button className="flex py-[10px] px-4 h-[40px] rounded-md justify-center contact-button">
+            <button className="ml-[80px] flex py-[10px] px-4 h-[40px] rounded-md justify-center contact-button">
               <div>Contact Sales</div>
               <img
                 src="/images/home/arrow.png"
@@ -254,7 +254,7 @@ function Kuwago() {
             <div className="w-[50%] text-[48px] font-medium leading-[57px] text-[#0D0E12]">
               Take your data to the next level with Kuwago
             </div>
-            <div className="w-[50%] mt-6 text-[18px] font-['Roobert'] leading-[21px]">
+            <div className="w-[55%] mt-6 text-[18px] font-normal leading-[21px]">
               Allows searches, questions and queries on a variety of enterprise
               sources such as file repositories, websites, data lakes, data
               warehouses, databases, wikis, chat systems, code repositories,

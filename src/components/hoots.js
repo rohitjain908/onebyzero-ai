@@ -51,7 +51,9 @@ function IntractiveCard({ img, title, description, id, setCardState }) {
       <div className="w-[36%] pt-[47px] pl-[42px] pr-[24px] pb-[20px] flex items-center">
         <div>
           <div className=" font-light tracking-[3.69px]">{title}</div>
-          <div className="mt-[57px]">{description}</div>
+          <div className="w-[70%] mt-[57px] leading-[21px] text-[18px]">
+            {description}
+          </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="61"
@@ -143,7 +145,7 @@ function Hoots() {
   useEffect(() => {
     const interval = setInterval(() => {
       setFeaturedCardId((featuredCardId + 1) % 3);
-    }, 4000);
+    }, 3000);
 
     //Clearing the interval
     return () => clearInterval(interval);
@@ -164,8 +166,8 @@ function Hoots() {
         {/* Header */}
 
         <div className=" ml-20 flex">
-          <div className="w-[42%] mt-[349px] mb-[140px]">
-            <div className=" text-[#070D4A] font-light text-[52px] leading-[62px] font-['Roobert']">
+          <div className="w-[42%] mt-[442px] mb-[140px]">
+            <div className=" text-[#070D4A] font-light text-[52px] leading-[62px]">
               Omni-channel communication with your customers at scale
             </div>
             <div className="mt-3">
@@ -182,7 +184,7 @@ function Hoots() {
             <img
               src="/images/hoots/frame1.png"
               alt="frame1"
-              className="ml-20"
+              className="ml-[100px]"
             />
           </div>
         </div>
@@ -196,20 +198,19 @@ function Hoots() {
         <div>&nbsp;</div>
 
         {/* Text container */}
-        <div className="w-[82%] gap-[98px] mt-[66px] flex mx-auto">
-          <div className="w-[35%]">
+        <div className="w-[82%] mt-[90px] flex mx-auto text-[#1E1E1E] text-[18px]">
+          <div className="w-[36%]">
             Hoots is a revolutionary platform that enables businesses to
             communicate with their customers seamlessly across multiple
             messaging channels.
           </div>
-          <div className="w-[21%] flex-1 px-6">
+          <div className="w-[23%] ml-[98px]">
             Integrate with WhatsApp, Messenger, Viber, Line, Telegram and more,
             and provide a truly seamless and personalized customer experience
             that increases engagement, satisfaction, and ultimately drives
             revenue.
           </div>
-
-          <button className="flex py-[10px] h-[40px] px-4 rounded-md justify-center contact-button">
+          <button className="ml-[120px] flex py-[10px] px-4 h-[40px] rounded-md justify-center contact-button">
             <div>Contact Sales</div>
             <img
               src="/images/home/arrow.png"
