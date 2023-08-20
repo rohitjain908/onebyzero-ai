@@ -1,0 +1,14 @@
+.footer {
+  background: url("../public/images/gif-background.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-color: black;
+}
+
+.contact-button:hover {
+  background: url("../public/images/gif-background.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+}

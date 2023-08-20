@@ -1,0 +1,39 @@
+.hoots-top-container {
+  background: linear-gradient(
+      0deg,
+      rgba(36, 0, 255, 0.49) 0%,
+      rgba(36, 0, 255, 0.49) 100%
+    ),
+    url("../../public/images/gif-background.gif"),
+    lightgray 50% / cover no-repeat;
+  background-blend-mode: color, normal;
+}
+
+.middle-container {
+  background: url("../../public/images/hoots/Lines-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-color: #f1f1f1;
+}
+
+.black-container {
+  background: url("../../public/images/hoots/Lines-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-color: black;
+}
+
+.whitepaper {
+  background: url("../../public/images/hoots/Lines-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-color: #f1f1f1;
+}
+
+.gif-background {
+  background: url("../../public/images/gif-background.gif"),
+    lightgray 50% / cover no-repeat;
+}

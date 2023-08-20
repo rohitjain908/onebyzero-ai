@@ -1,0 +1,56 @@
+.home-top-container {
+  background: url("../../public/images/gif-background.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+}
+
+.rest-container {
+  background: url("../../public/images/home/Lines.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-color: #f1f1f1;
+}
+
+.enterprise-container {
+  background: url("../../public/images/home/Lines.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-color: black;
+}
+
+.achievement-container {
+  background: url("../../public/images/home/Lines.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-color: #f1f1f1;
+}
+
+.scroll-testimonials img {
+  display: inline-block;
+  max-width: initial;
+  margin-right: 50px;
+  height: 60px;
+}
+
+.band-1 {
+  width: 23200px;
+  transform: translateX(0%);
+  animation: move 291s linear infinite;
+  padding-bottom: 10px;
+}
+
+.band-2 {
+  width: 22262px;
+  transform: translateX(0%);
+  animation: move 291s linear infinite;
+}
+
+@keyframes move {
+  to {
+    transform: translateX(-100%);
+  }
+}
