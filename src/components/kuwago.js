@@ -5,7 +5,6 @@ import Footer from "./footer";
 
 function IntractiveCard({ img, title, description, id, setCardState }) {
   const circles = [0, 1, 2, 3].map((index) => {
-    console.log("index ", index);
     return id === index ? (
       <button
         className={`h-[10px] w-[10px] bg-black rounded-[100px] block ${
@@ -152,8 +151,6 @@ function Kuwago() {
   ];
 
   const [featuredCardId, setFeaturedCardId] = useState(0);
-
-  console.log("featuredCardData[0]", featuredCardData[featuredCardId].img);
 
   useEffect(() => {
     const interval = setInterval(() => {
